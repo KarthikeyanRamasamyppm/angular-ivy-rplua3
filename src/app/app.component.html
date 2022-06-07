@@ -1,0 +1,23 @@
+<h4>Template Driven Forms</h4>
+<form #cform="ngForm" (ngSubmit)="onSubmit(cform)">
+  <p>
+    <label>Firstname:</label>
+    <input type="text" name="firstname" id="firtsname" ngModel />
+  </p>
+  <p>
+    <label>LastName:</label>
+    <input type="text" name="lastname" id="lastname" ngModel />
+  </p>
+  <p>
+    <label>City:</label>
+    <select name="city">
+      <option value="">Select</option>
+      <option value="Erode">Erode</option>
+      <option value="Namakkal">Namakkal</option>
+      <option value="Salem">Salem</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" name="submit" />
+  </p>
+</form>
